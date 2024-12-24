@@ -1,0 +1,2 @@
+aws s3 sync . s3://dna-autodidact-production-bucket/repos/hu-sp-4085d648f-community-events-platform-scaffolding_react_app-1732021702457/master/ --delete --exclude ./venv/\* --exclude ./env/\*
+echo Success

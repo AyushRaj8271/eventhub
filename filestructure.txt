@@ -1,0 +1,72 @@
+|-- .github
+    |-- actions
+        |-- sonar-scanner-runner.sh
+        |-- update-db-runner.sh
+    |-- workflows
+        |-- main.yaml
+|-- .gitignore
+|-- bypass
+|-- db.json
+|-- default.conf
+|-- Dockerfile
+|-- nginx.conf
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- public
+    |-- favicon.ico
+    |-- index.html
+    |-- logo192.png
+    |-- logo512.png
+    |-- manifest.json
+    |-- robots.txt
+|-- README.md
+|-- src
+    |-- App.css
+    |-- App.test.tsx
+    |-- App.tsx
+    |-- assets
+        |-- public
+            |-- logo.png
+    |-- components
+        |-- Auth
+            |-- AddEvent
+                |-- AddEvent.tsx
+            |-- Login
+                |-- Login.tsx
+            |-- Signup
+                |-- Signup.test.tsx
+                |-- Signup.tsx
+        |-- EventCard
+            |-- EventCard.test.tsx
+            |-- EventCard.tsx
+        |-- EventDetailCard
+            |-- EventDetailCard.tsx
+        |-- Map
+            |-- Map.tsx
+        |-- Navbar
+            |-- Navabar.tsx
+            |-- Navbar.test.tsx
+        |-- Redirect
+            |-- AuthRedirect.tsx
+    |-- index.css
+    |-- index.tsx
+    |-- logo.svg
+    |-- pages
+        |-- AddEventPage.tsx
+        |-- AllEventPage.tsx
+        |-- AnalayticsPage.tsx
+        |-- Analytics.tsx
+        |-- EventDetailsPage.tsx
+        |-- LoginPage.tsx
+        |-- SignupPage.tsx
+    |-- react-app-env.d.ts
+    |-- redux
+        |-- eventSlice.ts
+        |-- store.ts
+    |-- reportWebVitals.ts
+    |-- setupTests.ts
+    |-- utils
+        |-- validation.ts
+|-- tailwind.config.js
+|-- tsconfig.json
