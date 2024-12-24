@@ -26,7 +26,7 @@ import {
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { format, isAfter, isBefore } from 'date-fns';
 import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+
 
 interface BarData {
   month: number;

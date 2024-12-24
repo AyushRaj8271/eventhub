@@ -27,7 +27,7 @@ Make sure you have the following tools installed:
 
 ```bash
 git clone <repository-url>
-cd eventify
+cd eventhub
 ```
 
 #### 2. **Install dependencies**:

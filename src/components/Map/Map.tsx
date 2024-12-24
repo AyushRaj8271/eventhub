@@ -1,11 +1,11 @@
 // src/components/Map/Map.tsx
 
-import React from 'react';
-import { GoogleMap, useJsApiLoader , Marker } from '@react-google-maps/api';
+import React from "react";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: '100%',
-  height: '400px',
+  width: "100%",
+  height: "400px",
 };
 
 interface MapProps {
@@ -15,17 +15,20 @@ interface MapProps {
 
 const Map: React.FC<MapProps> = ({ lat, lng }) => {
   const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: '',
+    id: "google-map-script",
+    googleMapsApiKey: "",
   });
 
   const [map, setMap] = React.useState<google.maps.Map | null>(null);
-
-  const onLoad = React.useCallback(function callback(map: google.maps.Map) {
-    const bounds = new window.google.maps.LatLngBounds({ lat, lng });
-    map.fitBounds(bounds);
-    setMap(map);
-  }, [lat, lng]);
+  console.log("Map is loaded:", map);
+  const onLoad = React.useCallback(
+    function callback(map: google.maps.Map) {
+      const bounds = new window.google.maps.LatLngBounds({ lat, lng });
+      map.fitBounds(bounds);
+      setMap(map);
+    },
+    [lat, lng]
+  );
 
   const onUnmount = React.useCallback(function callback(map: google.maps.Map) {
     setMap(null);
@@ -39,7 +42,7 @@ const Map: React.FC<MapProps> = ({ lat, lng }) => {
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
-         <Marker position={{ lat, lng }} />
+      <Marker position={{ lat, lng }} />
       <></>
     </GoogleMap>
   ) : (
